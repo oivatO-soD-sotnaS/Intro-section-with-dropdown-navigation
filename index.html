@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&family=Outfit&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+  <link rel="stylesheet" href="../CSS/main.css">
+</head>
+<body>
+  <div id="overlay"></div>
+  <section class="hero">
+    <header>
+      <img src="images/logo.svg" alt="logo" class="logo">
+      <label for="menu-checkbox" class="menu-icon" ><img src="images/icon-menu.svg" id="menu-icon" onclick="changeMenuIcon()"></label>
+      <input type="checkbox" name="menu-checkbox" id="menu-checkbox" class="menu-checkbox">
+      <nav id="nav">
+        <section class="left">
+          <ul>
+            <li>
+              <label for="featuresCheckbox" id="featuresLabel">Features<img src="images/icon-arrow-down.svg" alt="arrow down" id="featuresArrow"></label>
+              <input type="checkbox" name="features-menu" id="featuresCheckbox" class="features-menu">
+              <ul class="features-dropdown">
+                <li><img src="images/icon-todo.svg" alt="todo icon"><a href="#">Todo List</a></li>
+                <li><img src="images/icon-calendar.svg" alt=""><a href="#">Calendar</a></li>
+                <li><img src="images/icon-reminders.svg" alt="reminders icon"><a href="#">Reminder</a></li>
+                <li><img src="images/icon-planning.svg" alt="planning icon"><a href="#">Planning</a></li>
+              </ul>
+            </li>
+            <li>
+              <label for="companyCheckbox" id="companyLabel">Company<img src="images/icon-arrow-down.svg" alt="arrow down" id="companyArrow"></label>
+              <input type="checkbox" name="company-menu" id="companyCheckbox" class="company-menu">
+              <ul class="company-dropdown">
+                <li><a href="#">History</a></li>
+                <li><a href="#">Our Team</a></li>
+                <li><a href="#">Blog</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">About</a></li>
+          </ul>
+        </section>
+        <section class="right">
+          <ul>
+            <li><a href="#">Login</a></li>
+            <li><a href="#" class="register-btn">Register</a></li>
+          </ul>
+        </section>
+      </nav>
+    </header>
+    <section class="about">
+      <section class="image"><img src="images/image-hero-mobile.png" alt="mobile hero image" class="mobile-image"></section>
+      <section class="text">
+        <section>
+          <h1>Make remote work</h1>
+          <p>Get your team in sync, no matter what your location. 
+            Streamline processes, create team rituals,
+             and watch productivity soat.
+          </p>
+          <input type="button" value="Learn more" class="learn-more-btn">
+        </section>
+        <section class="sponsorships">
+          <img src="images/client-databiz.svg" alt="databiz logo" class="sponsorship-img">
+          <img src="images/client-audiophile.svg" alt="audiophile logo" class="sponsorship-img">
+          <img src="images/client-meet.svg" alt="meet logo" class="sponsorship-img">
+          <img src="images/client-maker.svg" alt="client maker logo" class="sponsorship-img">
+        </section>
+      </section>
+    </section>
+    <section class="attribuition  ">
+      <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Your Name Here</a>. </p>
+    </section>
+  </section>
+  
+  <script src="JS/main.js "></script>
+</body>
+</html>
